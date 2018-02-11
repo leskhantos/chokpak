@@ -1,0 +1,116 @@
+
+<script type="text/javascript">
+function clock() {
+var d = new Date();
+var month_num = d.getMonth()
+var day = d.getDate();
+var hours = d.getHours();
+var minutes = d.getMinutes();
+var seconds = d.getSeconds();
+
+month=new Array("января", "февраля", "марта", "апреля", "мая", "июня",
+"июля", "августа", "сентября", "октября", "ноября", "декабря");
+
+if (day <= 9) day = "0" + day;
+if (hours <= 9) hours = "0" + hours;
+if (minutes <= 9) minutes = "0" + minutes;
+if (seconds <= 9) seconds = "0" + seconds;
+
+date_time = "Сегодня - " + day + " " + month[month_num] + " " + d.getFullYear() +
+" г.&nbsp;&nbsp;&nbsp;Текущее время - "+ hours + ":" + minutes + ":" + seconds;
+if (document.layers) {
+ document.layers.doc_time.document.write(date_time);
+ document.layers.doc_time.document.close();
+}
+else document.getElementById("doc_time").innerHTML = date_time;
+ setTimeout("clock()", 1000);
+}
+</script>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+      <meta name="description" content="Орнитологическая Станция Чокпак" >
+<meta name="keywords" content="Станция Чокпак, орнитология, птицы, Чокпак, Шакпак станция,Шақпақ станция,Орнитологическая Станция Чокпак, отчёты" >;
+    <title>Чокпак</title>
+	<title>Отчёты Чокпак</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+            <div class="row logo">
+            <div class="col-xs-9 col-md-7">
+			<a href="index.html" id="logo"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="time">
+                      <p>
+                        <span id="doc_time">
+                        
+                        </span>
+                                    <script type="text/javascript">
+                                    clock();
+                                    </script>
+                        </p>
+            </div>
+            </div>
+</head>
+<body>
+    <header>
+        <nav>
+			<div class="topnav" id="myTopnav">
+
+					<a href="index.html"><span>О</span> Нас</a>
+				
+					<a href="history.html"><span>И</span>стория</a>
+				
+					<a href="projects.html"><span>П</span>роекты</a>
+			
+					<a href="staff.html"><span>С</span>отрудники</a>
+				
+					<a href="guest.html"><span>Г</span>ости</a>
+				
+					<a href="contact.html"><span>К</span>онтакты</a>
+                                        
+                    <a href="report.html"><span>О</span>тчёты</a>
+				  <a id="menu" href="#" class="icon">&#9776;</a>  
+                        </div>
+        </nav>
+		
+    </header>
+    <main class="report">
+    <img src="images/report.jpg" alt="web" style="max-width: 100%;">
+ 
+     	 <p style="color: #fff;text-align: center;">Весна 1971</p>
+  <p style="text-align: right;"><a href="images/report/ВЕСНА_1971.xlsx" download>Скачать файл</a>
+<hr>
+
+     	 <p style="color:#fff; text-align: center;">Осень 1992</p>
+  <p style="text-align: right;"><a href="images/report/ОСЕНЬ_1992.xlsx" download>Скачать файл</a>
+ <hr>
+       	 <p style="color: #fff;text-align: center;">Весна 1971</p>
+  <p style="text-align: right;"><a href="images/report/ВЕСНА_1971.xlsx" download>Скачать файл</a>
+<hr>
+
+     	 <p style="color:#fff;text-align: center;">Осень 1992</p>
+  <p style="text-align: right;"><a href="images/report/ОСЕНЬ_1992.xlsx" download>Скачать файл</a>
+         	<hr>
+         	 <p style="color: #fff;text-align: center;">Весна 1971</p>
+  <p style="text-align: right;"><a href="images/report/ВЕСНА_1971.xlsx" download>Скачать файл</a>
+<hr>
+
+     	 <p style="color:#fff;text-align: center;">Осень 1992</p>
+  <p style="text-align: right;"><a href="images/report/ОСЕНЬ_1992.xlsx" download>Скачать файл</a>
+  </p>
+    </main>    
+    
+<footer>
+		
+		<div>
+			<p>
+				Chokpak© 2018 |Все права защищены.
+			</p>
+		</div>
+</footer>
+
+<script src="javascript.js"></script>
+
+</body>
+</html>

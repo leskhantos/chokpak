@@ -1,0 +1,144 @@
+
+<script type="text/javascript">
+function clock() {
+var d = new Date();
+var month_num = d.getMonth()
+var day = d.getDate();
+var hours = d.getHours();
+var minutes = d.getMinutes();
+var seconds = d.getSeconds();
+
+month=new Array("января", "февраля", "марта", "апреля", "мая", "июня",
+"июля", "августа", "сентября", "октября", "ноября", "декабря");
+
+if (day <= 9) day = "0" + day;
+if (hours <= 9) hours = "0" + hours;
+if (minutes <= 9) minutes = "0" + minutes;
+if (seconds <= 9) seconds = "0" + seconds;
+
+date_time = "Сегодня - " + day + " " + month[month_num] + " " + d.getFullYear() +
+" г.&nbsp;&nbsp;&nbsp;Текущее время - "+ hours + ":" + minutes + ":" + seconds;
+if (document.layers) {
+ document.layers.doc_time.document.write(date_time);
+ document.layers.doc_time.document.close();
+}
+else document.getElementById("doc_time").innerHTML = date_time;
+ setTimeout("clock()", 1000);
+}
+</script>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+        <meta name="description" content="Орнитологическая Станция Чокпак" >
+<meta name="keywords" content="Станция Чокпак, орнитология, птицы, Чокпак, Шакпак станция,Шақпақ станция,Орнитологическая Станция Чокпак" >;
+    <title>Чокпак</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+       
+         <div class="row logo">
+            <div class="col-xs-9 col-md-7">
+            <a href="index.html" id="logo"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="time">
+                      <p>
+                        <span id="doc_time">
+                        
+                        </span>
+                                    <script type="text/javascript">
+                                    clock();
+                                    </script>
+                        </p>
+            </div>
+            </div>
+         
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="topnav" id="myTopnav">
+
+                    <a href="index.html"><span>О</span> Нас</a>
+                
+                    <a href="history.html"><span>И</span>стория</a>
+                
+                    <a href="projects.html"><span>П</span>роекты</a>
+            
+                    <a href="staff.html"><span>С</span>отрудники</a>
+                
+                    <a href="guest.html"><span>Г</span>ости</a>
+                
+                    <a href="contact.html"><span>К</span>онтакты</a>
+                                        
+                    <a href="report.html"><span>О</span>тчёты</a>
+                <a id="menu" href="#" class="icon">&#9776;</a>  
+                        </div>
+        </nav>
+        
+    </header>
+    <main>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1/7</div>
+                <img src="images/index/1.jpg" style="width: 100%; height: 700px" alt="1">
+                <div class="text">Юбилей</div>
+            </div>
+              <div class="mySlides fade">
+                <div class="numbertext">2/7</div>
+                <img src="images/index/2.jpg" style="width: 100%;height: 700px" alt="1">
+                <div class="text">2016</div>
+            </div>
+              <div class="mySlides fade">
+                <div class="numbertext">3/7</div>
+                <img src="images/index/3.jpg" style="width: 100%;height: 700px" alt="1">
+                <div class="text">Ловушка </div>
+            </div>
+              <div class="mySlides fade">
+                <div class="numbertext">4/7</div>
+                <img src="images/index/4.jpg" style="width: 100%;height: 700px" alt="1">
+                <div class="text">Ловушка </div>
+            </div>
+              <div class="mySlides fade">
+                <div class="numbertext">5/7</div>
+                <img src="images/index/5.jpg" style="width: 100%;height: 700px" alt="1">
+                <div class="text">Ловушка </div>
+            </div>
+              <div class="mySlides fade">
+                <div class="numbertext">6/7</div>
+                <img src="images/index/6.jpg" style="width: 100%;height: 700px" alt="1">
+                <div class="text">Ловушка</div>
+            </div>
+              <div class="mySlides fade">
+                <div class="numbertext">7/7</div>
+                <img src="images/index/7.jpg" style="width: 100%;height: 700px" alt="1">
+                <div class="text">Ловушка</div>
+            </div>
+          
+        </div>
+     
+      
+      <div class="about_container">
+        
+        <h1>Шакпак(Чокпак)<h1>
+                        <p> Чокпакский перевал  расположен на стыке хребта Таласский Алатау и отрога Каратау — Боролдай-тау </p>
+     
+    </div>
+
+<div class="adaptive-wrap">
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/IAwLicAqv_E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+    </main>    
+    
+<footer>
+        
+        <div>
+            <p>
+                Chokpak© 2018 |Все права защищены.
+            </p>
+        </div>
+</footer>
+
+<script src="javascript.js"></script>
+
+</body>
+</html>

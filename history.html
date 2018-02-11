@@ -1,0 +1,101 @@
+
+<script type="text/javascript">
+function clock() {
+var d = new Date();
+var month_num = d.getMonth()
+var day = d.getDate();
+var hours = d.getHours();
+var minutes = d.getMinutes();
+var seconds = d.getSeconds();
+
+month=new Array("января", "февраля", "марта", "апреля", "мая", "июня",
+"июля", "августа", "сентября", "октября", "ноября", "декабря");
+
+if (day <= 9) day = "0" + day;
+if (hours <= 9) hours = "0" + hours;
+if (minutes <= 9) minutes = "0" + minutes;
+if (seconds <= 9) seconds = "0" + seconds;
+
+date_time = "Сегодня - " + day + " " + month[month_num] + " " + d.getFullYear() +
+" г.&nbsp;&nbsp;&nbsp;Текущее время - "+ hours + ":" + minutes + ":" + seconds;
+if (document.layers) {
+ document.layers.doc_time.document.write(date_time);
+ document.layers.doc_time.document.close();
+}
+else document.getElementById("doc_time").innerHTML = date_time;
+ setTimeout("clock()", 1000);
+}
+</script>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+       <meta name="description" content="Орнитологическая Станция Чокпак" >
+<meta name="keywords" content="Станция Чокпак, орнитология, птицы, Чокпак, Шакпак станция,Шақпақ станция,Орнитологическая Станция Чокпак, история" >;
+    <title>Чокпак</title>
+	<title>История Чокпак</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+            <div class="row logo">
+            <div class="col-xs-9 col-md-7">
+			<a href="index.html" id="logo"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="time">
+                      <p>
+                        <span id="doc_time">
+                        
+                        </span>
+                                    <script type="text/javascript">
+                                    clock();
+                                    </script>
+                        </p>
+            </div>
+            </div>
+</head>
+<body>
+    <header>
+        <nav>
+			<div class="topnav" id="myTopnav">
+
+					<a href="index.html"><span>О</span> Нас</a>
+				
+					<a href="history.html"><span>И</span>стория</a>
+				
+					<a href="projects.html"><span>П</span>роекты</a>
+			
+					<a href="staff.html"><span>С</span>отрудники</a>
+				
+					<a href="guest.html"><span>Г</span>ости</a>
+				
+					<a href="contact.html"><span>К</span>онтакты</a>
+                                        
+                    <a href="report.html"><span>О</span>тчёты</a>
+				  <a id="menu" href="#" class="icon">&#9776;</a>  
+                        </div>
+        </nav>
+		
+    </header>
+    <main>
+        
+      <div class="history_container">
+		
+		<h1>Орнитологическая станция «Чокпак» в Республике Казахстан.<h1>
+                        <p> Чокпакский перевал  расположен на стыке хребта Таласский Алатау и отрога Каратау — Боролдай-тау. Узкий проход между склонами в виде «бутылочного горлышка», испокон веков является миграционным путем у перелетных птиц. В исторических фактах отмечалось, что перевал также стоял на Великом Шелковом пути, это логично преобразилось и в современности: через этот удобный коридор проложен автобан и железнодорожная дорога, которые связали два южных города Казахстана, Алматы и Шымкент. Важная роль этого природного объекта очевидна. Это все больше привлекает внимание ученых-исследователей, изучающих жизнь пернатых, но также сюда приезжают и любители со всего мира. История становления стационара Чокпак — это, прежде всего, многоликая история, пожалуй, о самой романтичной профессии во все времена. Здесь образовалась дружная семья профессионалов, сформировалась целая фабрика по подготовке специалистов, между которыми происходит постоянный взаимообмен опытом. В Казахстане и на территории всей Средней Азии постсоветского пространства, стационар является единственным объектом такого масштаба, здесь сохраняется традиция преемственности поколений и объединяются преданные своему делу ученые.</p>
+                        <p>Большая работа на стационаре Чокпак могла состояться только благодаря проницательным и отважным личностям, кто полностью отдавал себя этому благородному делу. Икар Бородихин — первый начальник отряда, очевидец самых сложных и радостных дней и ночей на стационаре. Символична и его дата рождения — 10 сентября 2016 года ему исполнилось 80 лет. По единогласному решению членов первого Чокпакского отряда было принято день рождения первого начальника отряда признать днем рождения стационара. Поэтому каждую пятилетку единомышленники и сотрудники приезжают, чтобы сообща отметить это двойное событие. В 2016 году Икару Федоровичу исполнилось 80, а стационару — 50 лет.</p>
+	 
+	</div>
+    </main>    
+    
+<footer>
+		
+		<div>
+			<p>
+				Chokpak© 2018 |Все права защищены.
+			</p>
+		</div>
+</footer>
+
+<script src="javascript.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+
+<script type="text/javascript">
+function clock() {
+var d = new Date();
+var month_num = d.getMonth()
+var day = d.getDate();
+var hours = d.getHours();
+var minutes = d.getMinutes();
+var seconds = d.getSeconds();
+
+month=new Array("января", "февраля", "марта", "апреля", "мая", "июня",
+"июля", "августа", "сентября", "октября", "ноября", "декабря");
+
+if (day <= 9) day = "0" + day;
+if (hours <= 9) hours = "0" + hours;
+if (minutes <= 9) minutes = "0" + minutes;
+if (seconds <= 9) seconds = "0" + seconds;
+
+date_time = "Сегодня - " + day + " " + month[month_num] + " " + d.getFullYear() +
+" г.&nbsp;&nbsp;&nbsp;Текущее время - "+ hours + ":" + minutes + ":" + seconds;
+if (document.layers) {
+ document.layers.doc_time.document.write(date_time);
+ document.layers.doc_time.document.close();
+}
+else document.getElementById("doc_time").innerHTML = date_time;
+ setTimeout("clock()", 1000);
+}
+</script>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+      <meta name="description" content="Орнитологическая Станция Чокпак" >
+<meta name="keywords" content="Станция Чокпак, орнитология, птицы, Чокпак, Шакпак станция,Шақпақ станция,Орнитологическая Станция Чокпак, контакты" >;
+    <title>Чокпак</title>
+	<title>Контакты Чокпак</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+            <div class="row logo">
+            <div class="col-xs-9 col-md-7">
+			<a href="index.html" id="logo"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="time">
+                      <p>
+                        <span id="doc_time">
+                        
+                        </span>
+                                    <script type="text/javascript">
+                                    clock();
+                                    </script>
+                        </p>
+            </div>
+            </div>
+</head>
+<body>
+    <header>
+        <nav>
+			<div class="topnav" id="myTopnav">
+
+					<a href="index.html"><span>О</span> Нас</a>
+				
+					<a href="history.html"><span>И</span>стория</a>
+				
+					<a href="projects.html"><span>П</span>роекты</a>
+			
+					<a href="staff.html"><span>С</span>отрудники</a>
+				
+					<a href="guest.html"><span>Г</span>ости</a>
+				
+					<a href="contact.html"><span>К</span>онтакты</a>
+                                        
+                    <a href="report.html"><span>О</span>тчёты</a>
+				  <a id="menu" href="#" class="icon">&#9776;</a>  
+                        </div>
+        </nav>
+		
+    </header>
+    <main class="contact">
+       
+    <p>Спасибо за Ваш интерес!
+  <p itemprop="telephone">Телефон: +7 747 356‒93‒55
+
+  <p>Email: <a href="mailto:support@site.ru" target="_blank" itemprop="email">info@chokpak.kz</a> 
+ 
+  <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Адрес: <span itemprop="postalCode">000000</span>, Казахстан, <span itemprop="addressLocality">Жамбылская обл.</span>, <span itemprop="streetAddress">Жуалинский район село.Станция Чокпак</span></p>
+	<br>
+	<h1>Станция Чокпак</h1>
+	<div id="map"></div>
+    </main>    
+    
+<footer>
+		
+		<div>
+			<p>
+				Chokpak© 2018 |Все права защищены.
+			</p>
+		</div>
+</footer>
+ <script>
+      function initMap() {
+        var uluru = {lat: 42.537054, lng: 70.6155252};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 9,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC10tZQYEdKTezrraGWdiLmmhQaZS5bzgg&callback=initMap">
+    </script>
+<script src="javascript.js"></script>
+
+</body>
+</html>
